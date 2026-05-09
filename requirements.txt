@@ -19,6 +19,9 @@ penn>=0.0.8
 # Option B: torchcrepe (use this if penn doesn't work, AI added this as a backup when troubleshooting)
 # torchcrepe>=0.0.20
 
+# CPU support — Tested but significantly more latency
+# pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+
 # CUDA support — install the CUDA-enabled torch build separately:
 # pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
 # (replace cu121 with your CUDA version, e.g. cu118 for CUDA 11.8)
