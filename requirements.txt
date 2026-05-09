@@ -1,0 +1,27 @@
+# Audio Pipeline Requirements
+# Install with: pip install -r requirements.txt
+
+# Audio capture
+sounddevice>=0.4.6
+numpy>=1.24.0
+
+# Voice Activity Detection
+torch>=2.0.0
+torchaudio>=2.0.0
+silero-vad
+
+# Speech to Text
+faster-whisper>=1.0.0
+
+# Pitch Detection (install ONE of these — penn is preferred)
+# Option A: PENN
+penn>=0.0.8
+# Option B: torchcrepe (use this if penn doesn't work, AI added this as a backup when troubleshooting)
+# torchcrepe>=0.0.20
+
+# CUDA support — install the CUDA-enabled torch build separately:
+# pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+# (replace cu121 with your CUDA version, e.g. cu118 for CUDA 11.8)
+# (pytorch may not always be up to date with the latest version of CUDA, if so,
+#  CUDA should be backwards compatible within the same major revision number, 
+#  i.e. 12.6 CUDA will work with 12.5/125 pytorch)
