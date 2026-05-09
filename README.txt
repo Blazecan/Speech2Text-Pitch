@@ -1,6 +1,6 @@
-Speech to text/pitch (NAME W.I.P.)
+Speech2Text-Pitch (NAME W.I.P.)
 
-Speech to text/pitch is a program that takes your microphone input and records it
+Speech2Text-Pitch is a program that takes your microphone input and records it
 as text spoke with the associated pitch over time. 
 
 Currently this is cool tool with a visualizer, but will eventually have 
@@ -20,7 +20,7 @@ so you must be connected to the internet
 
 It is currently setup to use CUDA with 6GB VRAM or greater
 If 4GB or less, go to transcriber.py and change MODEL_SIZE = "large-v3" to "medium"
-If not using CUDA at all, its recommended ot use MODEL_SIZE = "small"
+If using CPU instead of CUDA, its recommended ot use MODEL_SIZE = "small"
 
 Currently setup to only recognize english text. To recognize other languages,
 go to transcriber.py and in _run_inference() change "en" to NONE for automatic
